@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
 class IMDbHomePage(BasePage):
-    SEARCH_INPUT = (By.CSS_SELECTOR, "input#suggestion-search")  
+    SEARCH_INPUT = (By.CSS_SELECTOR, ".imdb-header-search__input.searchTypeahead__input.react-autosuggest__input")
     SEARCH_BUTTON = (By.ID, "suggestion-search-button")           
 
     def search_movie(self, movie_name):
